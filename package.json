@@ -1,10 +1,6 @@
 {
   "main": "index.js",
   "scripts": {
-    "analyze:tailwind-css-class-order": "rustywind --dry-run .",
-    "analyze": "yarn run analyze:tailwind-css-class-order",
-    "fix:tailwind-css-class-order": "rustywind --write .",
-    "fix": "yarn run fix:tailwind-css-class-order",
     "dev": "next",
     "build": "next build",
     "export": "yarn run build && next export",
@@ -12,6 +8,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "license": "MIT",
+  "repository": {
+    "url": "https://github.com/rulikkk/creator"
+  },
   "dependencies": {
     "next": "9.5.2",
     "react": "16.13.1",
@@ -19,7 +18,6 @@
   },
   "devDependencies": {
     "autoprefixer": "9.8.6",
-    "rustywind": "0.6.6",
     "tailwindcss": "1.7.3"
   }
 }

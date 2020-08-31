@@ -1,12 +1,12 @@
 import Link from "next/link";
 // import { useState } from "react";
 
-function Header() {
+const Header = () => {
   // const [isExpanded, toggleExpansion] = useState(false);
 
   return (
     <header className="bg-teal-500">
-      <div className="flex flex-wrap items-center justify-between max-w-4xl p-4 mx-auto md:flex-no-wrap md:p-8">
+      <div className="flex flex-wrap items-center justify-between p-4">
         <div className="flex items-center">
           <span
             role="img"
@@ -18,7 +18,7 @@ function Header() {
 
           <Link href="/">
             <p className="text-xl font-bold text-white">
-              Next.js Starter Tailwind
+              New — a place to create new stuff!
             </p>
           </Link>
         </div>
@@ -56,6 +56,6 @@ function Header() {
       </div>
     </header>
   );
-}
+};
 
 export default Header;

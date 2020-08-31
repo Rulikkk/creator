@@ -1,21 +1,21 @@
 const Footer = () => (
   <footer className="bg-blue-500">
-    <ul className="flex items-center justify-between max-w-4xl p-4 mx-auto text-sm text-white md:p-8">
+    <ul className="flex items-center justify-between p-4 text-sm text-white">
       <li>
         Created by{" "}
         <a
-          href="https://rmust.me"
+          href="https://twitter.com/rulikkk"
           target="_blank"
           rel="noopener noreferrer"
           className="font-bold"
         >
-          Rustem Mustafin
+          Rulikkk
         </a>
       </li>
 
       <li>
         <a
-          href="https://github.com/rulikkk"
+          href="https://github.com/rulikkk/creator"
           target="_blank"
           rel="noopener noreferrer"
           className="font-bold"
