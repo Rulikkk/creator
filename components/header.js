@@ -5,13 +5,13 @@ const Header = () => {
   // const [isExpanded, toggleExpansion] = useState(false);
 
   return (
-    <header className="bg-teal-500">
+    <header className="bg-blue-500">
       <div className="flex flex-wrap items-center justify-between p-4">
         <div className="flex items-center">
           <span
             role="img"
             aria-label=""
-            className="w-10 mr-3 text-white text-xl text-center"
+            className="w-10 mr-3 text-xl text-center text-white"
           >
             💡
           </span>
