@@ -1,54 +1,55 @@
-const CreateButton = ({ name, img, url, description }) => (
-  <div class="container p-4" style={{ width: "20rem" }}>
-    <div class="card flex flex-col justify-center p-6 bg-white rounded-lg shadow-2xl">
-      <div class="prod-title">
-        <p class="text-2xl text-gray-900 font-bold">{name}</p>
-        <p class=" text-sm text-gray-400">{description}</p>
+const CreateButton = ({ name, img, url, description, code }) => (
+  <div className="inline-block p-4 text-base" style={{ width: "20rem" }}>
+    <div className="flex flex-col justify-center p-6 bg-white rounded-lg shadow-2xl card">
+      <div className="prod-title">
+        <p className="text-2xl font-bold text-gray-900">{name}</p>
+        <p className="text-sm text-gray-400 ">{description}</p>
       </div>
-      <div class="prod-img my-2">
-        <img src={img} class="mx-auto p-4" style={{ minHeight: "160px" }} />
+      <div className="my-2 prod-img">
+        <img src={img} className="p-4 mx-auto" style={{ minHeight: "160px" }} />
       </div>
-      {/* <div class="prod-info grid gap-10"> */}
+      {/* <div className="grid gap-10 prod-info"> */}
       {/* <div>
-          <ul class="flex flex-row justify-center items-center">
-            <li class="mr-4 last:mr-0">
-              <span class="block p-1 border-2 border-gray-500 rounded-full transition ease-in duration-300">
+          <ul className="flex flex-row items-center justify-center">
+            <li className="mr-4 last:mr-0">
+              <span className="block p-1 transition duration-300 ease-in border-2 border-gray-500 rounded-full">
                 <a
                   href="#blue"
-                  class="block w-6 h-6 bg-blue-900 rounded-full"
+                  className="block w-6 h-6 bg-blue-900 rounded-full"
                 ></a>
               </span>
             </li>
-            <li class="mr-4 last:mr-0">
-              <span class="block p-1 border-2 border-white hover:border-gray-500 rounded-full transition ease-in duration-300">
+            <li className="mr-4 last:mr-0">
+              <span className="block p-1 transition duration-300 ease-in border-2 border-white rounded-full hover:border-gray-500">
                 <a
                   href="#yellow"
-                  class="block w-6 h-6 bg-yellow-500 rounded-full"
+                  className="block w-6 h-6 bg-yellow-500 rounded-full"
                 ></a>
               </span>
             </li>
-            <li class="mr-4 last:mr-0">
-              <span class="block p-1 border-2 border-white hover:border-gray-500 rounded-full transition ease-in duration-300">
+            <li className="mr-4 last:mr-0">
+              <span className="block p-1 transition duration-300 ease-in border-2 border-white rounded-full hover:border-gray-500">
                 <a
                   href="#red"
-                  class="block w-6 h-6 bg-red-500 rounded-full"
+                  className="block w-6 h-6 bg-red-500 rounded-full"
                 ></a>
               </span>
             </li>
-            <li class="mr-4 last:mr-0">
-              <span class="block p-1 border-2 border-white hover:border-gray-500 rounded-full transition ease-in duration-300">
+            <li className="mr-4 last:mr-0">
+              <span className="block p-1 transition duration-300 ease-in border-2 border-white rounded-full hover:border-gray-500">
                 <a
                   href="#green"
-                  class="block w-6 h-6 bg-green-500 rounded-full"
+                  className="block w-6 h-6 bg-green-500 rounded-full"
                 ></a>
               </span>
             </li>
           </ul>
         </div> */}
       <a
+        onClick={code}
         href={url}
         target="_blank"
-        class="text-center px-6 py-2 transition ease-in duration-200 uppercase rounded-full hover:bg-gray-800 hover:text-white border-2 border-gray-900 focus:outline-none"
+        className="px-6 py-2 text-center uppercase transition duration-200 ease-in border-2 border-gray-900 rounded-full cursor-pointer hover:bg-gray-800 hover:text-white focus:outline-none"
       >
         Create
       </a>

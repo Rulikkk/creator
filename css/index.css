@@ -1,3 +1,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* 
+calculations for media
+    width = 320px * n
+    min-width = 320px * n + 32 px
+    max-width = 320px * (n + 1) + 31px
+*/
+
+@media screen and (max-width: 671px) {
+  #trix {
+    width: 320px;
+  }
+}
+@media screen and (min-width: 672px) and (max-width: 991px) {
+  #trix {
+    width: 640px;
+  }
+}
+@media screen and (min-width: 991px) and (max-width: 1311px) {
+  #trix {
+    width: 960px;
+  }
+}
+@media screen and (min-width: 1312px) and (max-width: 1631px) {
+  #trix {
+    width: 1280px;
+  }
+}
+@media screen and (min-width: 1632px) and (max-width: 1951px) {
+  #trix {
+    width: 1600px;
+  }
+}
+@media screen and (min-width: 1952px) {
+  #trix {
+    width: 1920px;
+  }
+}
