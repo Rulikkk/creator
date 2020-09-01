@@ -10,9 +10,9 @@ NextJS with Tailwind.
 
 ### Tools Support
 
-- [*] Initial version
-- [*] Suport for google docs/sheets/slides
-- [*] Trello cards support
+- [x] Initial version
+- [x] Suport for google docs/sheets/slides
+- [x] Trello cards support
 - [ ] Dropbox paper support
 - [ ] Microsoft office support
 - [ ] ... what else?
