@@ -17,7 +17,7 @@ const Header = () => {
           </span>
 
           <Link href="/">
-            <p className="text-xl font-bold text-white">
+            <p className="text-lg font-bold text-white">
               New — a place to create new stuff!
             </p>
           </Link>

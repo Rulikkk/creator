@@ -6,7 +6,7 @@ const CreateButton = ({ name, img, url, description, code }) => (
         <p className="text-sm text-gray-400 ">{description}</p>
       </div>
       <div className="my-2 prod-img">
-        <img src={img} className="p-4 mx-auto" style={{ minHeight: "160px" }} />
+        <img src={img} className="p-4 mx-auto" style={{ height: "160px" }} />
       </div>
       {/* <div className="grid gap-10 prod-info"> */}
       {/* <div>

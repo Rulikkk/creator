@@ -46,6 +46,13 @@ const basic = [
       "https://aid-frontend.prod.atl-paas.net/atlassian-id/front-end/5.0.165/static/media/trello-logo-blue.8fe57621.svg",
     description: "New Trello Card",
   },
+  {
+    name: "Dropbox Paper",
+    url: "https://paper.dropbox.com",
+    img:
+      "https://aem.dropbox.com/cms/content/dam/dropbox/www/en-us/branding/app-paper-ios@2x.png",
+    description: "New Dropbox Paper Document",
+  },
 ];
 
 export default basic;
