@@ -13,7 +13,7 @@ NextJS with Tailwind.
 - [x] Initial version
 - [x] Suport for google docs/sheets/slides
 - [x] Trello cards support
-- [ ] Dropbox paper support
+- [x] Dropbox paper support
 - [ ] Microsoft office support
 - [ ] ... what else?
 
@@ -26,4 +26,5 @@ NextJS with Tailwind.
 
 - [ ] Search box (algolia?)
 - [ ] Keyboard support
-- [ ] Track items created and store quick-links (is this even possible?)
+- [ ] Track recent items and store quick-links (is this even possible?)
+- [ ] Recent items in search
