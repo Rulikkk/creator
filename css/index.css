@@ -2,40 +2,56 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  font-size: 12px;
+}
+
 /* 
 calculations for media
-    width = 320px * n
-    min-width = 320px * n + 32 px
-    max-width = 320px * (n + 1) + 31px
+    n = 1...
+    base = font-size * 2
+    width = (base)px * n * 10
+    min-width = (base)px * n * 10 + (base)px
+    max-width = (base)px * (n + 1) * 10 + (base-1)px
 */
 
-@media screen and (max-width: 671px) {
+@media screen and (max-width: calc(240px * 2 + 23px)) {
   #trix {
-    width: 320px;
+    width: calc(240px * 1);
   }
 }
-@media screen and (min-width: 672px) and (max-width: 991px) {
+@media screen and (min-width: calc(240px * 2 + 24px)) and (max-width: calc(240px * 3 + 23px)) {
   #trix {
-    width: 640px;
+    width: calc(240px * 2);
   }
 }
-@media screen and (min-width: 991px) and (max-width: 1311px) {
+@media screen and (min-width: calc(240px * 3 + 24px)) and (max-width: calc(240px * 4 + 23px)) {
   #trix {
-    width: 960px;
+    width: calc(240px * 3);
   }
 }
-@media screen and (min-width: 1312px) and (max-width: 1631px) {
+@media screen and (min-width: calc(240px * 4 + 24px)) and (max-width: calc(240px * 5 + 23px)) {
   #trix {
-    width: 1280px;
+    width: calc(240px * 4);
   }
 }
-@media screen and (min-width: 1632px) and (max-width: 1951px) {
+@media screen and (min-width: calc(240px * 5 + 24px)) and (max-width: calc(240px * 6 + 23px)) {
   #trix {
-    width: 1600px;
+    width: calc(240px * 5);
   }
 }
-@media screen and (min-width: 1952px) {
+@media screen and (min-width: calc(240px * 6 + 24px)) and (max-width: calc(240px * 7 + 23px)) {
   #trix {
-    width: 1920px;
+    width: calc(240px * 6);
+  }
+}
+@media screen and (min-width: calc(240px * 7 + 24px)) and (max-width: calc(240px * 8 + 23px)) {
+  #trix {
+    width: calc(240px * 7);
+  }
+}
+@media screen and (min-width: calc(240px * 8 + 24px)) {
+  #trix {
+    width: calc(240px * 8);
   }
 }

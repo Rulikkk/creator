@@ -1,12 +1,22 @@
-const CreateButton = ({ name, img, url, description, code }) => (
+const CreateButton = ({
+  name,
+  img,
+  url,
+  description,
+  code,
+  label = "Basic",
+}) => (
   <div className="inline-block p-4 text-base" style={{ width: "20rem" }}>
-    <div className="flex flex-col justify-center p-6 bg-white rounded-lg shadow-2xl card">
+    <div className="relative flex flex-col justify-center p-6 bg-white rounded-lg shadow-2xl card">
+      <div class="absolute inset-x-0 top-0 text-right pr-4 pt-1 text-gray-300">
+        {label}
+      </div>
       <div className="prod-title">
         <p className="text-2xl font-bold text-gray-900">{name}</p>
-        <p className="text-sm text-gray-400 ">{description}</p>
+        <p className="text-base text-gray-400 ">{description}</p>
       </div>
       <div className="my-2 prod-img">
-        <img src={img} className="p-4 mx-auto" style={{ height: "160px" }} />
+        <img src={img} className="h-40 p-4 mx-auto" />
       </div>
       {/* <div className="grid gap-10 prod-info"> */}
       {/* <div>

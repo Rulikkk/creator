@@ -1,10 +1,14 @@
 import Layout from "../components/layout";
 import CreateButton from "../components/CreateButton";
 import basic from "../data/basic.js";
+import Head from "next/head";
 
 export default function IndexPage() {
   return (
     <Layout>
+      <Head>
+        <title>💡 New — a place to create new stuff!</title>
+      </Head>
       <div
         className="p-0 mx-auto my-0 text-left"
         id="trix"

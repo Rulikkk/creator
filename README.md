@@ -28,3 +28,4 @@ NextJS with Tailwind.
 - [ ] Keyboard support
 - [ ] Track recent items and store quick-links (is this even possible?)
 - [ ] Recent items in search
+- [ ] Packs support

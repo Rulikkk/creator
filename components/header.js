@@ -5,7 +5,7 @@ const Header = () => {
   // const [isExpanded, toggleExpansion] = useState(false);
 
   return (
-    <header className="bg-blue-500">
+    <header className="bg-blue-500 shadow-2xl">
       <div className="flex flex-wrap items-center justify-between p-4">
         <div className="flex items-center">
           <span
@@ -17,7 +17,7 @@ const Header = () => {
           </span>
 
           <Link href="/">
-            <p className="text-lg font-bold text-white">
+            <p className="text-xl font-bold text-white">
               New — a place to create new stuff!
             </p>
           </Link>
