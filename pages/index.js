@@ -1,9 +1,27 @@
-import Layout from "../components/layout";
-import CreateButton from "../components/CreateButton";
-import basic from "../data/basic.js";
+import localforge from "localforage";
 import Head from "next/head";
+import { useState, useEffect } from "react";
+import CreateButton from "../components/CreateButton";
+import Layout from "../components/layout";
+import basic from "../data/basic.js";
+
+const getPacks = (setPacks) => {
+  const items = [];
+  console.log("getting packs...");
+  localforge
+    .iterate((pack) => {
+      const packItems = pack.items.map((x) => ({ label: pack.name, ...x }));
+      items.push(...packItems);
+    })
+    .then(() => {
+      console.log(items);
+      setPacks(items);
+    });
+};
 
 export default function IndexPage() {
+  let [packs, setPacks] = useState([]);
+  useEffect(() => getPacks(setPacks), []);
   return (
     <Layout>
       <Head>
@@ -14,7 +32,7 @@ export default function IndexPage() {
         id="trix"
         style={{ fontSize: 0 }}
       >
-        {basic.map((item) => (
+        {[...basic, ...packs].map((item) => (
           <CreateButton key={item.name} {...item} />
         ))}
         {/* <img

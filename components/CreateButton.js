@@ -5,14 +5,15 @@ const CreateButton = ({
   description,
   code,
   label = "Basic",
+  button = "Create",
 }) => (
   <div className="inline-block p-4 text-base" style={{ width: "20rem" }}>
     <div className="relative flex flex-col justify-center p-6 bg-white rounded-lg shadow-2xl card">
-      <div class="absolute inset-x-0 top-0 text-right pr-4 pt-1 text-gray-300">
+      <div class="absolute inset-x-0 top-0 text-right pr-4 pt-1 text-blue-400">
         {label}
       </div>
       <div className="prod-title">
-        <p className="text-2xl font-bold text-gray-900">{name}</p>
+        <p className="text-2xl font-bold text-gray-900 truncate">{name}</p>
         <p className="text-base text-gray-400 ">{description}</p>
       </div>
       <div className="my-2 prod-img">
@@ -61,7 +62,7 @@ const CreateButton = ({
         target="_blank"
         className="px-6 py-2 text-center uppercase transition duration-200 ease-in border-2 border-gray-900 rounded-full cursor-pointer hover:bg-gray-800 hover:text-white focus:outline-none"
       >
-        Create
+        {button}
       </a>
       {/* </div> */}
     </div>
