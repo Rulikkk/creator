@@ -9,7 +9,7 @@ const CreateButton = ({
 }) => (
   <div className="inline-block p-4 text-base" style={{ width: "20rem" }}>
     <div className="relative flex flex-col justify-center p-6 bg-white rounded-lg shadow-2xl card">
-      <div class="absolute inset-x-0 top-0 text-right pr-4 pt-1 text-blue-400">
+      <div className="absolute inset-x-0 top-0 pt-1 pr-4 text-right text-blue-400">
         {label}
       </div>
       <div className="prod-title">
